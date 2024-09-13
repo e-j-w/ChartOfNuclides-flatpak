@@ -1,0 +1,10 @@
+# directories
+flatpak_build
+.flatpak-builder
+# temporary files from text editors
+*.save
+*~
+.vscode
+*.code-workspace
+sample_parameters
+octave-workspace
