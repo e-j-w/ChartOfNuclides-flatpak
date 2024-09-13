@@ -77,11 +77,6 @@ modules:
       - type: file
         url: https://www.nndc.bnl.gov/ensdfarchivals/distributions/dist24/ensdf_240901.zip
         sha256: 2887f8ee04c15695d7340ed498773d3b1d24a429897286084f93beffcf946dbd
-      - type: file
-        url: https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ele=&all=all&ascii=ascii2&isotype=some
-        sha256: 9cb950abf23f3e5e5670d4906a44492a5f0babaf1f49eddfbde3119643e58723
-        dest: data/
-        dest-filename: abundances.txt
     cleanup:
       - '*.o'
       - 'data/'
