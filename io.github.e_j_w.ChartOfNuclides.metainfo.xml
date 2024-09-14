@@ -9,15 +9,20 @@
   <name translate="no">Jonathan Williams</name>
 </developer>
 <description>
-  <p>An offline viewer of isotope and nuclear structure data.</p>
+  <p>A fast, offline viewer of isotope and nuclear structure data. Data is shown in the Chart of Nuclides format (also known as the Segrè chart), which categorizes nuclides/isotopes based on their proton and neutron numbers.</p>
   <p>Features:</p>
   <ul>
-    <li>Display the nuclear chart with various color schemes: half-life/lifetime, E(2+)...</li>
+    <li>Display the chart with various color schemes: half-life/lifetime, E(2+)...</li>
     <li>Select individual nuclides to browse data on ground and excited states, decay modes, and more</li>
     <li>Runs locally, with no network connection needed</li>
   </ul>
 </description>
 <launchable type="desktop-id">io.github.e_j_w.ChartOfNuclides.desktop</launchable>
+<categories>
+  <category>Utility</category>
+  <category>Science</category>
+  <category>Education</category>
+</categories>
 <icon type="stock">io.github.e_j_w.ChartOfNuclides</icon>
 <branding>
   <color type="primary" scheme_preference="light">#dfffe2</color>
@@ -48,3 +53,4 @@
 <custom>
   <value key="flathub::manifest">https://github.com/e-j-w/ChartOfNuclides-flatpak/blob/c0d4a019f94bc5bcb13c3b64ef6445f312e5852d/io.github.e_j_w.ChartOfNuclides.yml</value>
 </custom>
+</component>
