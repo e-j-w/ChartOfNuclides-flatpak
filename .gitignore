@@ -1,5 +1,7 @@
 # directories
 flatpak_build
+flatpak-build
+repo
 .flatpak-builder
 ensdf
 # temporary files from text editors
