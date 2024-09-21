@@ -4,7 +4,7 @@
 <metadata_license>CC0-1.0</metadata_license>
 <project_license>GPL-3.0-only</project_license>
 <name>Chart of Nuclides</name>
-<summary>Browse nuclear structure data</summary>
+<summary>Browse isotope and nuclear data</summary>
 <developer id="io.github.e_j_w">
   <name translate="no">Jonathan Williams</name>
 </developer>
