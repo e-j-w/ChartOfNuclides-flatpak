@@ -9,8 +9,10 @@ finish-args:
   - --socket=fallback-x11
   # Wayland access
   - --socket=wayland
-  # GPU acceleration if needed
+  # GPU acceleration
   - --device=dri
+  # Gamepad support (can be replaced by --device=input on newer Flatpak versions)
+  - --device=all
 modules:
   - name: SDL3
     buildsystem: cmake-ninja
