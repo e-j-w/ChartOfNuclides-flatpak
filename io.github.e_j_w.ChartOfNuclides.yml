@@ -20,7 +20,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/libsdl-org/SDL.git
-        commit: 254b36361e575fe9add02003de7fa8589a104b78
+        commit: d8c76d2f348b1521e55ad73bb155470d63ee1b75
     cleanup:
       - '/bin/sdl3-config'
       - '/include'
@@ -47,7 +47,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/libsdl-org/SDL_ttf.git
-        commit: 989f7914775f958f9020ca9548163bdacc6397ab
+        commit: 96c04b6946f689015cae58fcc0891094d02b0757
     cleanup:
       - '/include'
       - '/lib/cmake'
@@ -59,7 +59,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/libsdl-org/SDL_image.git
-        commit: b88be01d57450740b305667f61f5ec22e9706a7a
+        commit: 6f4584340b9b78542d11bf0232a1a0862de1f0a9
     cleanup:
       - '/include'
       - '/lib/cmake'
@@ -71,12 +71,13 @@ modules:
       - unzip ensdf_240901.zip -d data/ensdf/
       - make all -j ${FLATPAK_BUILDER_N_JOBS}
       - install -Dm755 con -t ${FLATPAK_DEST}/bin
-      - install -Dm644 con.dat -t ${FLATPAK_DEST}/bin
+      - install -Dm644 con.dat -t ${FLATPAK_DEST}/share
       - install -Dm644 data/io.github.e_j_w.ChartOfNuclides.svg -t ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps
       - install -Dm644 data/io.github.e_j_w.ChartOfNuclides.desktop -t ${FLATPAK_DEST}/share/applications
     sources:
       - type: git
-        url: https://github.com/e-j-w/ChartOfNuclides.git
+        url: file:///home/jono/Documents/Code/ChartOfNuclides
+        #url: https://github.com/e-j-w/ChartOfNuclides.git
       - type: file
         url: https://www.nndc.bnl.gov/ensdfarchivals/distributions/dist24/ensdf_240901.zip
         sha256: 2887f8ee04c15695d7340ed498773d3b1d24a429897286084f93beffcf946dbd
