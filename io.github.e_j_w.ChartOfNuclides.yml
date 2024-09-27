@@ -76,11 +76,7 @@ modules:
       - install -Dm644 data/io.github.e_j_w.ChartOfNuclides.desktop -t ${FLATPAK_DEST}/share/applications
     sources:
       - type: git
-        url: file:///home/jono/Documents/Code/ChartOfNuclides
-        #url: https://github.com/e-j-w/ChartOfNuclides.git
+        url: https://github.com/e-j-w/ChartOfNuclides.git
       - type: file
         url: https://www.nndc.bnl.gov/ensdfarchivals/distributions/dist24/ensdf_240901.zip
         sha256: 2887f8ee04c15695d7340ed498773d3b1d24a429897286084f93beffcf946dbd
-    cleanup:
-      - '*.o'
-      - 'data/'
