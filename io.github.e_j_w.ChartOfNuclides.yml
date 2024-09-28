@@ -20,7 +20,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/libsdl-org/SDL.git
-        commit: 254b36361e575fe9add02003de7fa8589a104b78
+        commit: 55bd9f5311de14341c165fee899593707d31ebda
     cleanup:
       - '/bin/sdl3-config'
       - '/include'
@@ -47,7 +47,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/libsdl-org/SDL_ttf.git
-        commit: 989f7914775f958f9020ca9548163bdacc6397ab
+        commit: 8e7f1ae67da279562828535fb847f84afc6f6dfb
     cleanup:
       - '/include'
       - '/lib/cmake'
@@ -59,7 +59,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/libsdl-org/SDL_image.git
-        commit: b88be01d57450740b305667f61f5ec22e9706a7a
+        commit: 6f4584340b9b78542d11bf0232a1a0862de1f0a9
     cleanup:
       - '/include'
       - '/lib/cmake'
