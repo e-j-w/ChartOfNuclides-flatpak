@@ -9,11 +9,11 @@
   <name translate="no">Jonathan Williams</name>
 </developer>
 <description>
-  <p>A fast, offline viewer of isotope and nuclear structure data. Data is shown in the Chart of Nuclides format (also known as the Segrè chart), which categorizes nuclides/isotopes based on their proton and neutron numbers.</p>
+  <p>A fast, offline viewer of isotope and nuclear structure data. Data is shown in the Chart of Nuclides or Segrè chart format, which categorizes nuclides/isotopes based on their proton and neutron numbers.</p>
   <p>Features:</p>
   <ul>
-    <li>Display the chart with various color schemes: half-life/lifetime, E(2+)...</li>
-    <li>Select individual nuclides to browse data on ground and excited states, decay modes, and more</li>
+    <li>Display the chart with various color schemes: half-life/lifetime, primary decay mode, and more</li>
+    <li>Select individual nuclides to browse data on ground and excited states, decay modes, gamma-ray energies, and more</li>
     <li>Runs locally, with no network connection needed</li>
   </ul>
 </description>
@@ -43,7 +43,7 @@
   </screenshot>
 </screenshots>
 <releases>
-  <release version="0.1.0" date="2024-09-12">
+  <release version="0.1.0" date="2024-09-24">
     <url type="details">https://example.org/changelog.html#version_1.0.0</url>
     <description>
       <p>Initial release.</p>

@@ -71,7 +71,7 @@ modules:
       - unzip ensdf_240901.zip -d data/ensdf/
       - make all -j ${FLATPAK_BUILDER_N_JOBS}
       - install -Dm755 con -t ${FLATPAK_DEST}/bin
-      - install -Dm644 con.dat -t ${FLATPAK_DEST}/bin
+      - install -Dm644 con.dat -t ${FLATPAK_DEST}/share
       - install -Dm644 data/io.github.e_j_w.ChartOfNuclides.svg -t ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps
       - install -Dm644 data/io.github.e_j_w.ChartOfNuclides.desktop -t ${FLATPAK_DEST}/share/applications
     sources:
@@ -80,6 +80,3 @@ modules:
       - type: file
         url: https://www.nndc.bnl.gov/ensdfarchivals/distributions/dist24/ensdf_240901.zip
         sha256: 2887f8ee04c15695d7340ed498773d3b1d24a429897286084f93beffcf946dbd
-    cleanup:
-      - '*.o'
-      - 'data/'
