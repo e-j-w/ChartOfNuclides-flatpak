@@ -46,12 +46,11 @@
   </screenshot>
   <screenshot>
     <image>https://github.com/e-j-w/ChartOfNuclides-flatpak/blob/c122e49e3a156790324ef900b19753d8a443f0b4/assets/con_screenshot4.png</image>
-    <caption>List of levels and gamma rays for a selected nuclide (212Po), with color highlights for isomeric states</caption>
+    <caption>List of levels and gamma rays for a selected nuclide (212Po)</caption>
   </screenshot>
 </screenshots>
 <releases>
   <release version="0.1.0" date="2024-09-24">
-    <url type="details">https://example.org/changelog.html#version_1.0.0</url>
     <description>
       <p>Initial release.</p>
     </description>

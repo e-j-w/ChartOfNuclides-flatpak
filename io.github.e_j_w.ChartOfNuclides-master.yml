@@ -78,7 +78,6 @@ modules:
     sources:
       - type: git
         url: https://github.com/e-j-w/ChartOfNuclides.git
-        tag: v0.1.0
       # Latest ENSDF dataset (website: https://www.nndc.bnl.gov/ensdfarchivals/)
       # Redistribution: public domain, as a work of the US federal government (DOE Office of Science)
       - type: file
