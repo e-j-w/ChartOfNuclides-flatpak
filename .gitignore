@@ -4,6 +4,7 @@ flatpak-build
 repo
 .flatpak-builder
 ensdf
+*.flatpak
 # temporary files from text editors
 *.save
 *~
