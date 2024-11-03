@@ -68,7 +68,7 @@ modules:
   - name: con
     buildsystem: simple
     build-commands:
-      - unzip ensdf_240901.zip -d data/ensdf/
+      - unzip ensdf_241101.zip -d data/ensdf/
       - make all -j ${FLATPAK_BUILDER_N_JOBS}
       - install -Dm755 con -t /app/bin
       - install -Dm644 con.dat -t /app/share
@@ -82,5 +82,5 @@ modules:
       # Latest ENSDF dataset (website: https://www.nndc.bnl.gov/ensdfarchivals/)
       # Redistribution: public domain, as a work of the US federal government (DOE Office of Science)
       - type: file
-        url: https://www.nndc.bnl.gov/ensdfarchivals/distributions/dist24/ensdf_240901.zip
-        sha256: 2887f8ee04c15695d7340ed498773d3b1d24a429897286084f93beffcf946dbd
+        url: https://www.nndc.bnl.gov/ensdfarchivals/distributions/dist24/ensdf_241101.zip
+        sha256: d221d53f3406d65f6a3331a04ac247b18f743c0fa66044a90cb5e97264ffcb55
