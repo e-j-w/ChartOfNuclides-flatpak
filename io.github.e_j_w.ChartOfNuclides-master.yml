@@ -2,7 +2,7 @@ id: io.github.e_j_w.ChartOfNuclides
 runtime: org.freedesktop.Platform
 runtime-version: '24.08'
 sdk: org.freedesktop.Sdk
-command: con
+command: io.github.e_j_w.ChartOfNuclides
 finish-args:
   # X11 + XShm access
   - --share=ipc
@@ -70,7 +70,12 @@ modules:
     build-commands:
       - unzip ensdf_250101.zip -d data/ensdf/
       - make all -j ${FLATPAK_BUILDER_N_JOBS}
-      - install -Dm755 con -t /app/bin
+      # rename executable for compatibility with KDE task manager
+      # which assumes the same name for the executable and .desktop file
+      - mv con io.github.e_j_w.ChartOfNuclides
+      - sed -i 's/=con/=io.github.e_j_w.ChartOfNuclides/g' data/io.github.e_j_w.ChartOfNuclides.desktop
+      # install
+      - install -Dm755 io.github.e_j_w.ChartOfNuclides -t /app/bin
       - install -Dm644 con.dat -t /app/share
       - install -Dm644 data/io.github.e_j_w.ChartOfNuclides.metainfo.xml -t /app/share/metainfo
       - install -Dm644 data/io.github.e_j_w.ChartOfNuclides.svg -t /app/share/icons/hicolor/scalable/apps
