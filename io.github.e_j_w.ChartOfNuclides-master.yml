@@ -20,7 +20,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/libsdl-org/SDL.git
-        commit: 1c04ebe423223f8f3a828f0a0d7c9880215c8a52
+        commit: 4231848791dae4e0a9afb32e2f9e897985b7dde2
     cleanup:
       - '/bin/sdl3-config'
       - '/include'
@@ -47,7 +47,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/libsdl-org/SDL_ttf.git
-        commit: a71b5fa4033b0124672e0e4f63df0c0e98d9c648
+        commit: 35f67d20ebfa0336021b1cd2e8dd4422294a7bd4
     cleanup:
       - '/include'
       - '/lib/cmake'
@@ -59,7 +59,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/libsdl-org/SDL_image.git
-        commit: e657092392655a0710e56be6c2d0259266a90116
+        commit: f1ed91538fe2b793b11080cc76211ff8b4478713
     cleanup:
       - '/include'
       - '/lib/cmake'
@@ -68,7 +68,7 @@ modules:
   - name: con
     buildsystem: simple
     build-commands:
-      - unzip ensdf_241201.zip -d data/ensdf/
+      - unzip ensdf_250101.zip -d data/ensdf/
       - make all -j ${FLATPAK_BUILDER_N_JOBS}
       - install -Dm755 con -t /app/bin
       - install -Dm644 con.dat -t /app/share
@@ -81,5 +81,5 @@ modules:
       # Latest ENSDF dataset (website: https://www.nndc.bnl.gov/ensdfarchivals/)
       # Redistribution: public domain, as a work of the US federal government (DOE Office of Science)
       - type: file
-        url: https://www.nndc.bnl.gov/ensdfarchivals/distributions/dist24/ensdf_241201.zip
-        sha256: 13f699d34d69bc23adf0cf84458a62e44fe5dfc322bdb6970c60be04abbadebc
+        url: https://www.nndc.bnl.gov/ensdfarchivals/distributions/dist25/ensdf_250101.zip
+        sha256: 5709e579067bfd2891a6340bb9617c1108be437c78decf03185771c61374a5be
