@@ -47,7 +47,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/libsdl-org/SDL_ttf.git
-        commit: 7d62ee195e32180b874c97a07df4080712b467b6
+        tag: prerelease-3.1.2
+        #commit: 7d62ee195e32180b874c97a07df4080712b467b6
     cleanup:
       - '/include'
       - '/lib/cmake'
