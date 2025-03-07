@@ -20,7 +20,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/libsdl-org/SDL.git
-        tag: release-3.2.6
+        tag: release-3.2.8
     cleanup:
       - '/bin/sdl3-config'
       - '/include'
@@ -59,7 +59,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/libsdl-org/SDL_image.git
-        tag: release-3.2.2
+        tag: release-3.2.4
     cleanup:
       - '/include'
       - '/lib/cmake'
