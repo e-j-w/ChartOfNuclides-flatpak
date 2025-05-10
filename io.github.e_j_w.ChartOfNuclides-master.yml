@@ -20,7 +20,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/libsdl-org/SDL.git
-        tag: release-3.2.10
+        tag: release-3.2.12
     cleanup:
       - '/bin/sdl3-config'
       - '/include'
@@ -68,7 +68,7 @@ modules:
   - name: chart
     buildsystem: simple
     build-commands:
-      - unzip ensdf_250401.zip -d data/ensdf/
+      - unzip ensdf_250501.zip -d data/ensdf/
       - make all -j ${FLATPAK_BUILDER_N_JOBS}
       # rename executable for compatibility with KDE task manager
       # which assumes the same name for the executable and .desktop file
@@ -86,5 +86,5 @@ modules:
       # Latest ENSDF dataset (website: https://www.nndc.bnl.gov/ensdfarchivals/)
       # Redistribution: public domain, as a work of the US federal government (DOE Office of Science)
       - type: file
-        url: https://www.nndc.bnl.gov/ensdfarchivals/distributions/dist25/ensdf_250401.zip
-        sha256: 77df766b65eb61730a6306215f27218d0554026825652819da18ff3195f2506d
+        url: https://www.nndc.bnl.gov/ensdfarchivals/distributions/dist25/ensdf_250501.zip
+        sha256: a00d44aedc61d9d02b1be96faa26c55592a5d2e9f3a0bfd58d6cc03714b00a35
