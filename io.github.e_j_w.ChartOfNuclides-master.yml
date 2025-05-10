@@ -65,18 +65,18 @@ modules:
       - '/lib/cmake'
       - '/share/aclocal'
       - '/lib/pkgconfig'
-  - name: con
+  - name: chart
     buildsystem: simple
     build-commands:
       - unzip ensdf_250401.zip -d data/ensdf/
       - make all -j ${FLATPAK_BUILDER_N_JOBS}
       # rename executable for compatibility with KDE task manager
       # which assumes the same name for the executable and .desktop file
-      - mv con io.github.e_j_w.ChartOfNuclides
-      - sed -i 's/=con/=io.github.e_j_w.ChartOfNuclides/g' data/io.github.e_j_w.ChartOfNuclides.desktop
+      - mv chart io.github.e_j_w.ChartOfNuclides
+      - sed -i 's/=chart/=io.github.e_j_w.ChartOfNuclides/g' data/io.github.e_j_w.ChartOfNuclides.desktop
       # install
       - install -Dm755 io.github.e_j_w.ChartOfNuclides -t /app/bin
-      - install -Dm644 con.dat -t /app/share
+      - install -Dm644 chart.dat -t /app/share
       - install -Dm644 data/io.github.e_j_w.ChartOfNuclides.metainfo.xml -t /app/share/metainfo
       - install -Dm644 data/io.github.e_j_w.ChartOfNuclides.svg -t /app/share/icons/hicolor/scalable/apps
       - install -Dm644 data/io.github.e_j_w.ChartOfNuclides.desktop -t /app/share/applications
