@@ -1,6 +1,6 @@
 id: io.github.e_j_w.ChartOfNuclides
 runtime: org.freedesktop.Platform
-runtime-version: '24.08'
+runtime-version: '25.08'
 sdk: org.freedesktop.Sdk
 command: io.github.e_j_w.ChartOfNuclides
 finish-args:
@@ -20,7 +20,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/libsdl-org/SDL.git
-        tag: release-3.2.20
+        tag: release-3.2.22
     cleanup:
       - '/bin/sdl3-config'
       - '/include'
@@ -68,7 +68,7 @@ modules:
   - name: chart
     buildsystem: simple
     build-commands:
-      - unzip ensdf_250804.zip -d data/ensdf/
+      - unzip ensdf_250902.zip -d data/ensdf/
       - make all -j ${FLATPAK_BUILDER_N_JOBS}
       # rename executable for compatibility with KDE task manager
       # which assumes the same name for the executable and .desktop file
@@ -86,5 +86,5 @@ modules:
       # Latest ENSDF dataset (website: https://www.nndc.bnl.gov/ensdfarchivals/)
       # Redistribution: public domain, as a work of the US federal government (DOE Office of Science)
       - type: file
-        url: https://www.nndc.bnl.gov/ensdfarchivals/distributions/dist25/ensdf_250804.zip
-        sha256: 4c67de6ad03b36a2968140b2db7e643a85c4bc038b3f8f0313fdda5f7114937d
+        url: https://www.nndc.bnl.gov/ensdfarchivals/distributions/dist25/ensdf_250902.zip
+        sha256: 812d234f8a3be8dba953c92ea55122715e3d4937bd41272e496d0718d5051352
