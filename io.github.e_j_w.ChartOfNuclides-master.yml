@@ -11,8 +11,8 @@ finish-args:
   - --socket=wayland
   # GPU acceleration
   - --device=dri
-  # Gamepad support (apparently can be replaced by --device=input on recent Flatpak versions)
-  - --device=all
+  # Gamepad support
+  - --device=input
 modules:
   - name: SDL3
     buildsystem: cmake-ninja
