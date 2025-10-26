@@ -40,7 +40,7 @@ modules:
         sources:
           - type: git
             url: https://gitlab.freedesktop.org/libdecor/libdecor.git
-            tag: 0.2.3
+            tag: 0.2.4
   - name: SDL_ttf
     buildsystem: cmake-ninja
     builddir: true
