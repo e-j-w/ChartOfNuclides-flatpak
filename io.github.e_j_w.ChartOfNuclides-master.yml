@@ -20,7 +20,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/libsdl-org/SDL.git
-        tag: release-3.2.28
+        tag: release-3.4.0
     cleanup:
       - '/bin/sdl3-config'
       - '/include'
@@ -41,6 +41,7 @@ modules:
           - type: git
             url: https://gitlab.freedesktop.org/libdecor/libdecor.git
             tag: 0.2.4
+            # Version 0.2.5 of libdecor breaks window resizing on KDE...
   - name: SDL_ttf
     buildsystem: cmake-ninja
     builddir: true
@@ -59,7 +60,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/libsdl-org/SDL_image.git
-        tag: release-3.2.4
+        tag: release-3.2.6
     cleanup:
       - '/include'
       - '/lib/cmake'
@@ -84,7 +85,7 @@ modules:
       - type: git
         url: https://github.com/e-j-w/ChartOfNuclides.git
       # Latest ENSDF dataset (website: https://www.nndc.bnl.gov/ensdfarchivals/)
-      # Redistribution: public domain, as a work of the US federal government (DOE Office of Science)
+      # Copyright: public domain, as a work of the US federal government (DOE Office of Science)
       - type: file
         url: https://www.nndc.bnl.gov/ensdfarchivals/distributions/dist25/ensdf_251201.zip
         sha256: f88fb351e7999d569ef4b0ab45a220af885ca5a5d44920c4f510b61b2a38292c
