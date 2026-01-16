@@ -40,8 +40,7 @@ modules:
         sources:
           - type: git
             url: https://gitlab.freedesktop.org/libdecor/libdecor.git
-            tag: 0.2.4
-            # Version 0.2.5 of libdecor breaks window resizing on KDE...
+            tag: 0.2.5
   - name: SDL_ttf
     buildsystem: cmake-ninja
     builddir: true
@@ -69,7 +68,7 @@ modules:
   - name: chart
     buildsystem: simple
     build-commands:
-      - unzip ensdf_251201.zip -d data/ensdf/
+      - unzip ensdf_260101.zip -d data/ensdf/
       - make all -j ${FLATPAK_BUILDER_N_JOBS}
       # rename executable for compatibility with KDE task manager
       # which assumes the same name for the executable and .desktop file
@@ -87,5 +86,5 @@ modules:
       # Latest ENSDF dataset (website: https://www.nndc.bnl.gov/ensdfarchivals/)
       # Copyright: public domain, as a work of the US federal government (DOE Office of Science)
       - type: file
-        url: https://www.nndc.bnl.gov/ensdfarchivals/distributions/dist25/ensdf_251201.zip
-        sha256: f88fb351e7999d569ef4b0ab45a220af885ca5a5d44920c4f510b61b2a38292c
+        url: https://www.nndc.bnl.gov/ensdfarchivals/distributions/dist26/ensdf_260101.zip
+        sha256: b867e662f275510332beff28ff47426d22535dcab2f399e81feaaa580a16444d
