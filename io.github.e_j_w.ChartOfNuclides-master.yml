@@ -68,7 +68,7 @@ modules:
   - name: chart
     buildsystem: simple
     build-commands:
-      - unzip ensdf_260101.zip -d data/ensdf/
+      - unzip ensdf_260202.zip -d data/ensdf/
       - make all -j ${FLATPAK_BUILDER_N_JOBS}
       # rename executable for compatibility with KDE task manager
       # which assumes the same name for the executable and .desktop file
@@ -86,5 +86,5 @@ modules:
       # Latest ENSDF dataset (website: https://www.nndc.bnl.gov/ensdfarchivals/)
       # Copyright: public domain, as a work of the US federal government (DOE Office of Science)
       - type: file
-        url: https://www.nndc.bnl.gov/ensdfarchivals/distributions/dist26/ensdf_260101.zip
-        sha256: b867e662f275510332beff28ff47426d22535dcab2f399e81feaaa580a16444d
+        url: https://www.nndc.bnl.gov/ensdfarchivals/distributions/dist26/ensdf_260202.zip
+        sha256: c69f443e38408b2e0cba5d449d982c005d1336bb153536b32382813bb3e271de
