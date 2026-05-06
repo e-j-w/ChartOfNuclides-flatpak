@@ -11,16 +11,16 @@ finish-args:
   - --socket=wayland
   # GPU acceleration
   - --device=dri
-  # Gamepad support
+  # Gamepad support (optional)
   - --device=input
 modules:
   - name: chart
     buildsystem: simple
     build-commands:
-      - unzip ensdf_260401.zip -d data/ensdf/
+      - unzip ensdf_260501.zip -d data/ensdf/
       - make all -j ${FLATPAK_BUILDER_N_JOBS}
-      # rename executable for compatibility with KDE task manager
-      # which assumes the same name for the executable and .desktop file
+      # Rename executable for compatibility with KDE's task manager
+      # which seems to assume the same name for the executable and .desktop file
       - mv chart io.github.e_j_w.ChartOfNuclides
       - sed -i 's/=chart/=io.github.e_j_w.ChartOfNuclides/g' data/io.github.e_j_w.ChartOfNuclides.desktop
       # install
@@ -35,5 +35,5 @@ modules:
       # Latest ENSDF dataset (website: https://www.nndc.bnl.gov/ensdfarchivals/)
       # Copyright: public domain, as a work of the US federal government (DOE Office of Science)
       - type: file
-        url: https://www.nndc.bnl.gov/ensdfarchivals/distributions/dist26/ensdf_260401.zip
-        sha256: 572c0b94ce2de8e5d35a6384425aeff1d18ecf1d770f6627288c52a80b8f37ce
+        url: https://www.nndc.bnl.gov/ensdfarchivals/distributions/dist26/ensdf_260501.zip
+        sha256: 64bb30ac110ea65b0b4886879a25a76c3bcbe6425d2fe1b6360d9b3e680289b9
